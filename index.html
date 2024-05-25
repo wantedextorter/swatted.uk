@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#Larp it till you make it!</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="enter-message" style="display: block;" onclick="showMainPage()">Click Here to Enter</div>
+    <audio id="background-music" autoplay loop>
+        <source src="sound/audio.mp3" type="audio/mpeg">
+    </audio>
+    <div class="container" id="main-page" oncontextmenu="return false;" onmousedown="closePrompt()">
+        <div class="header">
+            <h1 style="font-weight: bold; font-size: 25px; position: fixed; top: 20px; left: 50%; transform: translateX(-50%); margin: 0; text-align: center;">Top Nigga's</h1>
+            <div class="ascii-art">
+                <pre style="font-weight: bold;">
+
+
+                    ^         
+                    | |        
+                  @#####@      
+                (###   ###)-.  
+              .(###     ###) \ 
+             /  (###   ###)   )
+            (=-  .@#####@|_--" 	This is a hold up! Put all your money in the
+            /\    \_|l|_/ (\   	disk drive slot, and no one gets hurt!
+           (=-\     |l|    /   
+            \  \.___|l|___/    
+            /\      |_|   /    
+           (=-\._________/\    
+            \             /    
+              \._________/     
+                #  ----  #     
+                #   __   #       
+                \########/      
+           
+                    V
+                        V
+                      V
+
+</pre>
+
+                <ul class="people-list">         
+                    <li><a href="#" onclick="showPrompt('Shiza')">Shiza</a></li>
+                    <li><a href="#" onclick="showPrompt('Remsec')">Remsec</a></li>
+                    <li><a href="#" onclick="showPrompt('MrB')">MrB</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="song-prompt" class="song-prompt" style="display: none;"></div>
+    <div class="prompt-background" id="custom-prompt" style="display: none;">
+        <div class="prompt-box">
+            <div class="user-profile">
+                <img id="avatar" src="" alt="User Avatar">
+            </div>
+            <div class="user-name" id="user-name"></div>
+            <div class="user-bio" id="user-bio"></div>
+            <div class="prompt-buttons">
+                <button class="prompt-button" onclick="closePrompt()">love</button>
+                <button class="prompt-button" onclick="closePrompt()">me</button>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-warning" id="mobile-warning">For the best experience, Please use PC..</div>
+    <script src="js/scripts.js"></script>
+    <script src="js/disable_inspect.js"></script>
+</body>
+</html>
